@@ -263,7 +263,7 @@ input[type="checkbox"]{
   align-items: center;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-width: 280px) and (max-width: 550px) {
 
   .container{
     grid-template-columns: 1fr;
@@ -299,7 +299,7 @@ input[type="checkbox"]{
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 1024px){
 
   .container{
     grid-template-columns: 1fr;
@@ -328,7 +328,7 @@ input[type="checkbox"]{
   }
   .weather-days{
     width: 100%;
-    display: inline-block;
+    display: inline-flex;
   }
   .highlights{
     grid-template-columns: 1fr;
