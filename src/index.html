@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Wheather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="search">
+          <label class="search-places" for="sidebar">Search for places</label>
+          <button class="current-location">
+            <i class="fas fa-location-arrow"></i>
+          </button>
+        </div>
+        <div class="header-container" id="header-container">
+
+        </div>
+    </header>
+    <input class="checkbox" type="checkbox" name="" id="sidebar">
+    <aside class="sidebar">
+      <div class="close">
+        <label for="sidebar" class="close-button">
+          <i class="fas fa-times"></i>
+        </label>
+      </div>
+
+      <div class="form">
+        <form action="">
+          <input type="text" name="location" id="" placeholder="&#128270; search location">
+          <button class="submit" type="submit">search</button>
+        </form>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="wrapper">
+        <div class="temperature-selector">
+          <input type="checkbox" name="" id="opt-1">
+          <label class="btn-temperature c" for="opt-1">ºC</label>
+          <label class="btn-temperature f" for="opt-1">ºF</label>
+        </div>
+        <div class="weather-days" id="weather-days" >
+          
+        </div>
+
+        <h2 class="section-title">Today's Highlights</h2>
+        <section class="highlights">
+          <article class="card wind" id="card-wind">
+
+          </article>
+          <article class="card humidity" id="card-humidity">
+
+          </article>
+          <article class="card visibility" id="card-visibility">
+
+          </article>
+          <article class="card air" id="card-air">
+
+          </article>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
