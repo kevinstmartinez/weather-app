@@ -8,8 +8,8 @@ import { cardAirPresure } from './cardAirPresure.js'
 
 const tempSelector = document.querySelector('#opt-1')
 const getLocation = async location => {
-  const proxy = 'https://cors-anywhere.herokuapp.com/'
-  const api = `${proxy}https://www.metaweather.com/api/location/${location}/`
+  // const proxy = 'https://cors-anywhere.herokuapp.com/'
+  const api = `https://www.metaweather.com/api/location/${location}/`
   await fetch(api)
   .then(response => response.json())
   .then(data => {
@@ -58,7 +58,8 @@ const getLocation = async location => {
             </div>
           </div>
           `
-        }))
+        })
+        )
       }
 
       headerContainer.innerHTML = buildHeader()
